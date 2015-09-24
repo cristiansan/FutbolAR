@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_min_to_min"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/comment_divider"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:background="@color/color_title_menu">
+
+            <ImageView
+                android:id="@+id/iv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icono_comentarios"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_centerVertical="true"/>
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_comments"
+                android:layout_toRightOf="@+id/iv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:text="@string/comments"/>
+
+            <ImageView
+                android:id="@+id/iv_hide_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/flecha"
+                android:layout_margin="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/layout_comment"
+            android:visibility="gone"
+            android:layout_below="@+id/comment_divider">
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/NoDataKey"
+                android:textSize="30dp"
+                android:textStyle="bold|italic"
+                android:background="@color/gray_item"
+                android:textColor="@color/gray_last_item"
+                foo:customFont="@string/font_name"
+                android:visibility="gone"/>
+
+                <ListView
+                    android:id="@+id/lvComments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false">
+                </ListView>
+
+            <RelativeLayout
+                android:id="@+id/layout_make_comment"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_metegol"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="45dp">
+
+                <EditText
+                    android:id="@+id/et_comment"
+                    android:layout_width="400dp"
+                    android:textColor="@color/gray_last_item"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/etcomment_style"
+                    android:padding="5dp"/>
+
+                <Button
+                    android:id="@+id/btnComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CommentKey"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/gray_last_item"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/et_comment"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_transparent_dark">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/bannerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_id" />
+
+    </RelativeLayout>
+
+</LinearLayout>

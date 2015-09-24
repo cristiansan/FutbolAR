@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/container_position_header"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/container_submenu_position_scorers"
+        android:background="@color/gray_position">
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumnPOS"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/TableColumnPOS"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumnTEAM"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/tv_tableColumnPOS"
+            android:gravity="center"
+            android:text="@string/TableColumnTEAM"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumnPTS"
+            android:layout_width="27dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_tableColumnMP"
+            android:gravity="center"
+            android:text="@string/TableColumnPTS"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumnMP"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/tv_tableColumnMW"
+            android:gravity="center"
+            android:text="@string/TableColumnMP"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumnMW"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toLeftOf="@+id/tv_tableColumnMD"
+            android:gravity="center"
+            android:text="@string/TableColumnMW"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumnMD"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toLeftOf="@+id/tv_tableColumnML"
+            android:gravity="center"
+            android:text="@string/TableColumnMD"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumnML"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/tv_tableColumnG"
+            android:gravity="center"
+            android:text="@string/TableColumnML"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumnG"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toLeftOf="@+id/tv_tableColumnGA"
+            android:gravity="center"
+            android:text="@string/TableColumnG"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumnGA"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="@string/TableColumnGA"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name_bold" />
+    </RelativeLayout>
+
+</merge>

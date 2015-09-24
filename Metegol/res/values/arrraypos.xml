@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="xPosForOnePlayer">
+        <item>230</item>
+    </integer-array>
+    <integer-array name="xPosForTwoPlayers">
+        <item>170</item>
+        <item>290</item>
+    </integer-array>
+    <integer-array name="xPosForThreePlayers">
+        <item>110</item>
+        <item>230</item>
+        <item>350</item>
+    </integer-array>
+    <integer-array name="xPosForFourPlayers">
+        <item>60</item>
+        <item>180</item>
+        <item>280</item>
+        <item>400</item>
+    </integer-array>
+    <integer-array name="xPosForFivePlayers">
+        <item>50</item>
+        <item>140</item>
+        <item>230</item>
+        <item>320</item>
+        <item>410</item>
+    </integer-array>
+    <integer-array name="xPosForSixPlayers">
+        <item>55</item>
+        <item>125</item>
+        <item>195</item>
+        <item>265</item>
+        <item>330</item>
+        <item>400</item>
+    </integer-array>
+    <integer-array name="xPosForSevenPlayers">
+        <item>20</item>
+        <item>90</item>
+        <item>160</item>
+        <item>230</item>
+        <item>300</item>
+        <item>370</item>
+        <item>440</item>
+    </integer-array>
+    <integer-array name="yPosForOnePlayerDefense">
+        <item>0</item>
+    </integer-array>
+    <integer-array name="yPosForTwoPlayersDefense">
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+    <integer-array name="yPosForThreePlayersDefense">
+        <item>20</item>
+        <item>0</item>
+        <item>20</item>
+    </integer-array>
+    <integer-array name="yPosForFourPlayersDefense">
+        <item>30</item>
+        <item>0</item>
+        <item>0</item>
+        <item>30</item>
+    </integer-array>
+    <integer-array name="yPosForFivePlayersDefense">
+        <item>30</item>
+        <item>20</item>
+        <item>0</item>
+        <item>20</item>
+        <item>30</item>
+    </integer-array>
+    <integer-array name="yPosForSixPlayersDefense">
+        <item>30</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>30</item>
+    </integer-array>
+    <integer-array name="yPosForSevenPlayersDefense">
+        <item>30</item>
+        <item>20</item>
+        <item>20</item>
+        <item>0</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </integer-array>
+    <integer-array name="yPosForOnePlayerMiddle">
+        <item>0</item>
+    </integer-array>
+    <integer-array name="yPosForTwoPlayersMiddle">
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+    <integer-array name="yPosForThreePlayersMiddle">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+    <integer-array name="yPosForFourPlayersMiddle">
+        <item>30</item>
+        <item>0</item>
+        <item>0</item>
+        <item>30</item>
+    </integer-array>
+    <integer-array name="yPosForFivePlayersMiddle">
+        <item>30</item>
+        <item>0</item>
+        <item>50</item>
+        <item>0</item>
+        <item>30</item>
+    </integer-array>
+    <integer-array name="yPosForSixPlayersMiddle">
+        <item>0</item>
+        <item>30</item>
+        <item>0</item>
+        <item>50</item>
+        <item>0</item>
+        <item>30</item>
+    </integer-array>
+    <integer-array name="yPosForSevenPlayersMiddle">
+        <item>30</item>
+        <item>0</item>
+        <item>30</item>
+        <item>0</item>
+        <item>30</item>
+        <item>0</item>
+        <item>30</item>
+    </integer-array>
+    <integer-array name="yPosForPlayers">
+        <item>400</item>
+        <item>310</item>
+        <item>150</item>
+        <item>20</item>
+    </integer-array>
+
+</resources>

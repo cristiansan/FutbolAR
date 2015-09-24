@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_item_match_row"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/black_twitter_titulars"
+    tools:context=".ItemMatchTwitter">
+
+    <RelativeLayout
+        android:id="@+id/container_user_picture"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:layout_alignParentLeft="true">
+
+        <ProgressBar
+            android:id="@+id/progressBarTopTwitter"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_twitter"
+            android:layout_width="85dp"
+            android:layout_height="95dp"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/twitter_photo_time_line" />
+
+    </RelativeLayout>
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_twitter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/container_user_picture"
+        android:ellipsize="end"
+        android:lines="1"
+        android:singleLine="true"
+        android:text="#SebaDominguez"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        foo:customFont="@string/font_name" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_total_mentions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_twitter_name"
+        android:layout_below="@+id/tv_twitter_name"
+        android:layout_marginLeft="3dp"
+        android:text="999.999 Menciones"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        foo:customFont="@string/font_name" />
+
+    <RelativeLayout
+        android:id="@+id/container_twitter_percentage"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_total_mentions"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/container_user_picture"
+        android:background="@color/light_blue_conteiner_tittle">
+
+        <View
+            android:id="@+id/view_twitter_percentage"
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/green_blue" />
+    </RelativeLayout>
+
+</RelativeLayout>

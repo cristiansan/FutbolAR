@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/container_min_to_min_body_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="-2dp"
+        android:background="@color/gray_metegol"
+        android:minHeight="50dp"
+        android:padding="5dp"
+        android:layout_margin="10dp">
+
+            <LinearLayout
+                android:id="@+id/container_incidence_min_by_min_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_icon_type_incidence_left"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/app_name" />
+
+
+                <com.components.TextViewPlus
+                    android:id="@+id/tv_min_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/min"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="22sp"
+                    android:textColor="@color/gray_black_font"
+                    foo:customFont="@string/font_name_bold" />
+
+            </LinearLayout>
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_comment_incidence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:maxWidth="600dp"
+                android:layout_toRightOf="@id/container_incidence_min_by_min_left"
+                android:textColor="@color/gray_black_font"
+                android:layout_gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:textColorHint="@color/gray_black_font"
+                android:textSize="22sp"
+                foo:customFont="@string/font_name" />
+
+            <LinearLayout
+                android:id="@+id/container_incidence_min_by_min_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_icon_type_incidence_right"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/app_name" />
+
+                <com.components.TextViewPlus
+                    android:id="@+id/tv_min_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/min"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/gray_black_font"
+                    foo:customFont="@string/font_name_bold" />
+
+            </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

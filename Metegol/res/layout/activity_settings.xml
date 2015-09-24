@@ -1,0 +1,265 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:foo="http://schemas.android.com/apk/res-auto/com.metegol"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gary_notification_strong"
+    android:orientation="vertical"
+    tools:context=".SettingNotificationActivity">
+
+    <RelativeLayout
+        android:id="@+id/container_title_setting_notification_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue_conteiner_tittle">
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_title_setting_notification_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/MenuOptNotificationKey"
+            android:textColor="@color/blue_tittle"
+            android:textColorHint="@color/blue_tittle"
+            foo:customFont="@string/font_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/first_settings_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/avatar"
+                android:layout_alignParentLeft="true"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_user_name"
+                android:layout_toRightOf="@+id/iv_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black_numbers"
+                android:textSize="12sp"
+                foo:customFont="@string/font_name" />
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_logout"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/logout"
+                android:textColor="@color/blue_selected"
+                android:textSize="15sp"
+                android:gravity="right"
+                android:clickable="true"
+                foo:customFont="@string/font_name" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/second_settings_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/first_settings_option">
+
+            <ImageView
+                android:id="@+id/iv_team"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_team"
+                android:layout_toRightOf="@+id/iv_team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="TEAMNAME"
+                android:textColor="@color/black_numbers"
+                android:textSize="12sp"
+                foo:customFont="@string/font_name" />
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_change_team"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/change"
+                android:textColor="@color/blue_selected"
+                android:textSize="15sp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:gravity="right"
+                android:clickable="true"
+                foo:customFont="@string/font_name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/third_settings_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/second_settings_option">
+
+            <ImageView
+                android:id="@+id/iv_languaje"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/idioma"
+                android:layout_alignParentLeft="true"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_languaje"
+                android:layout_toRightOf="@+id/iv_languaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/language"
+                android:textColor="@color/black_numbers"
+                android:textSize="12sp"
+                foo:customFont="@string/font_name" />
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_change_language"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/change"
+                android:textColor="@color/blue_selected"
+                android:textSize="15sp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:gravity="right"
+                android:clickable="true"
+                foo:customFont="@string/font_name" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/four_settings_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/third_settings_option">
+
+            <ImageView
+                android:id="@+id/iv_notifications"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/notificaciones"
+                android:layout_alignParentLeft="true"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_notifications"
+                android:layout_toRightOf="@+id/iv_notifications"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/notifications"
+                android:textColor="@color/black_numbers"
+                android:textSize="12sp"
+                foo:customFont="@string/font_name" />
+
+            <Switch
+                android:id="@+id/notifications"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="15dp"
+                android:gravity="right"
+                android:checked="false"
+                android:clickable="true"
+                android:layout_centerVertical="true" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/change_tournament_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/four_settings_option">
+
+            <ImageView
+                android:id="@+id/iv_change_tournament"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/setting_icon"
+                android:layout_alignParentLeft="true"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_tournament"
+                android:layout_toRightOf="@+id/iv_change_tournament"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/change_tournament"
+                android:textColor="@color/black_numbers"
+                android:textSize="12sp"
+                foo:customFont="@string/font_name" />
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_change_tournamen"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/change"
+                android:textColor="@color/blue_selected"
+                android:textSize="15sp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:gravity="right"
+                android:clickable="true"
+                foo:customFont="@string/font_name" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

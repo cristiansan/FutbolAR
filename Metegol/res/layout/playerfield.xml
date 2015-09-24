@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:id="@+id/lay_player_field"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_shirt_player_picture_field"
+        android:layout_width="45dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/iv_player_picture_field"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-14dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center" />
+
+    <ImageView
+        android:id="@+id/iv_player_field"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/player_field_frame" />
+
+    <ImageView
+        android:id="@+id/iv_player_new_shirt"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/iv_player_number"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:layout_marginLeft="20dp"
+        android:shadowColor="@android:color/white"
+        android:shadowDx="1.7"
+        android:shadowDy="1.5"
+        android:shadowRadius="1"
+        android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:id="@+id/iv_player_picture_field"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center" />
+
+    <RelativeLayout
+        android:id="@+id/container_name_player_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_shirt_player_picture_field"
+        android:layout_centerHorizontal="true">
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_player_name_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="1dp"
+            android:background="#595959"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="8sp"
+            foo:customFont="@string/font_name_bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_player_icon_1"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-15dp"
+        android:layout_toRightOf="@+id/iv_player_field"
+        android:contentDescription="@string/app_name"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_player_icon_2"
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:layout_below="@+id/iv_player_icon_1"
+        android:layout_toRightOf="@+id/iv_player_field"
+        android:contentDescription="@string/app_name"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_player_icon_3"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/iv_player_icon_2"
+        android:layout_toRightOf="@+id/iv_player_field"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:visibility="visible" />
+
+
+    <RelativeLayout
+        android:id="@+id/container_goals"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_above="@+id/container_name_player_field"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_goal_icon_1"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="2dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_goal_icon_2"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="2dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_goal_icon_3"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="2dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_goal_icon_4"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_number_of_goals"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/icon_number_of_goals"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

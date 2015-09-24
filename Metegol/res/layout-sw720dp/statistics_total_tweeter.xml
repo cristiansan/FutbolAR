@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical">
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_title_statitics_totals"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/green_blue"
+        android:gravity="center"
+        android:text="@string/Tweets_and_Retweets_counts"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        foo:customFont="@string/font_name" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/gray_light_tweeter"
+        android:paddingBottom="10dp">
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tweets"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="TWEETS"
+            android:textColor="@color/gray_black_font"
+            android:textSize="25sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tweets_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/tv_tweets"
+            android:text="0"
+            android:textColor="@color/gray_black_font"
+            android:textSize="25sp"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tweets_away"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_tweets"
+            android:text="0"
+            android:textColor="@color/gray_black_font"
+            android:textSize="25sp"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_retweets"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tweets"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="RETWEETS"
+            android:textColor="@color/gray_black_font"
+            android:textSize="25sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_retweets_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_retweets"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/tv_retweets"
+            android:text="0"
+            android:textColor="@color/gray_black_font"
+            android:textSize="25sp"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_retweets_away"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_retweets"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_retweets"
+            android:text="0"
+            android:textColor="@color/gray_black_font"
+            android:textSize="25sp"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_totals"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_retweets"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="TOTAL"
+            android:textColor="@color/gray_black_font"
+            android:textSize="25sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_totals_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_totals"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/tv_totals"
+            android:text="0"
+            android:textColor="@color/gray_black_font"
+            android:textSize="25sp"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_totals_away"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_totals"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_totals"
+            android:text="0"
+            android:textColor="@color/gray_black_font"
+            android:textSize="25sp"
+            foo:customFont="@string/font_name" />
+    </RelativeLayout>
+
+</LinearLayout>

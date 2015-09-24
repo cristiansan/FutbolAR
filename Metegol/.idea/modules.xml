@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../...iml" filepath="$PROJECT_DIR$/../...iml" />
+      <module fileurl="file://$PROJECT_DIR$/../FacebookSDK/FacebookSDK.iml" filepath="$PROJECT_DIR$/../FacebookSDK/FacebookSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Metegol.iml" filepath="$PROJECT_DIR$/Metegol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../FacebookSDK/facebook/facebook.iml" filepath="$PROJECT_DIR$/../FacebookSDK/facebook/facebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../libraryPullToRefresh/libraryPullToRefresh.iml" filepath="$PROJECT_DIR$/../libraryPullToRefresh/libraryPullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../librarySliding/librarySliding.iml" filepath="$PROJECT_DIR$/../librarySliding/librarySliding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../viewflow_library/viewflow_library.iml" filepath="$PROJECT_DIR$/../viewflow_library/viewflow_library.iml" />
+    </modules>
+  </component>
+</project>

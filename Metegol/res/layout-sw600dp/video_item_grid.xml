@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@color/gray_item">
+
+    <ProgressBar
+        android:id="@+id/progressBar_Video_Item"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp" />
+
+    <ImageView
+        android:id="@+id/iv_thumbnail_video"
+        android:layout_width="240dp"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="12dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_desc_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_thumbnail_video"
+        android:maxLines="4"
+        android:text=""
+        android:textColor="@color/black_numbers"
+        android:textSize="21sp"
+        foo:customFont="@string/font_name" />
+
+    <ImageView
+        android:id="@+id/iv_play_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/play_icon" />
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_metegol">
+
+    <com.components.SoccerFieldComponent
+        android:id="@+id/soccerField"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </com.components.SoccerFieldComponent>
+
+    <ImageButton
+        android:id="@+id/suplentesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/soccerField"
+        android:layout_alignTop="@+id/soccerField"
+        android:adjustViewBounds="true"
+        android:contentDescription="@android:string/untitled"
+        android:focusableInTouchMode="false"
+        android:padding="0dp"
+        android:src="@drawable/suplentes" />
+
+</RelativeLayout>

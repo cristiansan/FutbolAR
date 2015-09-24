@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:id="@+id/container_average_rows"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBarAverage"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:id="@+id/iv_emblem_team"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_tableColumnTEAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv_emblem_team"
+        android:text=""
+        android:textColor="@color/black_numbers"
+        android:textColorHint="@color/black_numbers"
+        android:textSize="24sp"
+        foo:customFont="@string/font_name_bold" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_tableColumn_1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@+id/tv_tableColumn_2"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black_numbers"
+        android:textColorHint="@color/black_numbers"
+        android:textSize="24sp"
+        foo:customFont="@string/font_name" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_tableColumn_2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/tv_tableColumn_3"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black_numbers"
+        android:textColorHint="@color/black_numbers"
+        android:textSize="24sp"
+        foo:customFont="@string/font_name" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_tableColumn_3"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/tv_tableColumnML"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black_numbers"
+        android:textColorHint="@color/black_numbers"
+        android:textSize="24sp"
+        foo:customFont="@string/font_name" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_tableColumnML"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/tv_tableColumnMP"
+        android:gravity="left"
+        android:text=""
+        android:textColor="@color/black_numbers"
+        android:textColorHint="@color/black_numbers"
+        android:textSize="24sp"
+        foo:customFont="@string/font_name" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_tableColumnMP"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/tv_tableColumnPRO"
+        android:gravity="left"
+        android:text=""
+        android:textColor="@color/black_numbers"
+        android:textColorHint="@color/black_numbers"
+        android:textSize="24sp"
+        foo:customFont="@string/font_name" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_tableColumnPRO"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingTop="3dp"
+        android:text=""
+        android:textColor="@color/blue_green"
+        android:textColorHint="@color/blue_green"
+        android:textSize="24sp"
+        foo:customFont="@string/font_name_bold" />
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_light_tweeter"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/container_item_match_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_black_tweeter">
+
+        <ImageView
+            android:id="@+id/iv_twitter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/twitter_photo_time_line" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_twitter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_twitter"
+            android:ellipsize="end"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_total_mentions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_twitter_name"
+            android:layout_below="@+id/tv_twitter_name"
+            android:layout_marginLeft="3dp"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            foo:customFont="@string/font_name" />
+
+        <RelativeLayout
+            android:id="@+id/container_twitter_percentage"
+            android:layout_width="230dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/tv_total_mentions"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/iv_twitter"
+            android:background="@color/light_blue_conteiner_tittle">
+
+            <View
+                android:id="@+id/view_twitter_percentage"
+                android:layout_width="10dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@color/green_blue" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/gray_metegol"
+    android:padding="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp">
+
+    <ProgressBar
+        android:id="@+id/progressBarComment"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp" />
+
+    <ImageView
+        android:id="@+id/iv_user_picture"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/app_name" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_comment_body"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_user_picture"
+        android:text=""
+        android:textColor="@color/gray_comment_body"
+        android:textColorHint="@color/gray_comment_body"
+        foo:customFont="@string/font_name" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/ivShield"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:padding="10dp"
+        android:adjustViewBounds="false"
+        android:maxHeight="150dp"
+        android:visible="true"
+        android:gravity="center"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/strut"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/gray_item_special"/>
+
+</RelativeLayout>

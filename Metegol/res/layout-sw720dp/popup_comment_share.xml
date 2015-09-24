@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="500dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:background="@drawable/etcomment_style">
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_text_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        foo:customFont="@string/font_name"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/gray_last_item"
+        android:text="@string/Tv_text_comment"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_text_comment">
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/iv_btn_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/boton_facebook" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_title_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_centerVertical="true"
+            android:textSize="25dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/text_facebook_button"
+            android:textColor="@color/gray_strong"
+            foo:customFont="@string/font_name" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/layout_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingTop="10dp"
+        android:background="@color/gray_middle"/>
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_cancel_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:textSize="30sp"
+        android:text="@string/cancel_comment"
+        android:textColor="@color/gray_last_item"
+        android:gravity="center"
+        android:clickable="true"
+        foo:customFont="@string/font_name" />
+
+</LinearLayout>

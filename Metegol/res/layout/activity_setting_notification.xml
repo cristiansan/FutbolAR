@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_notification_light"
+    android:orientation="vertical"
+    tools:context=".SettingNotificationActivity">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/container_title_setting_notification_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue_conteiner_tittle">
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_title_setting_notification_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/MenuOptNotificationKey"
+            android:textColor="@color/blue_tittle"
+            android:textColorHint="@color/blue_tittle"
+            foo:customFont="@string/font_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/container_sound_option_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray_notification_light">
+
+            <com.components.TextViewPlus
+                android:id="@+id/sound_notification_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/soundSettingNotification"
+                android:textColor="@color/black_numbers"
+                android:textSize="18sp"
+                foo:customFont="@string/font_name" />
+
+            <ToggleButton
+                android:id="@+id/sound_notification_checkbox"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/switch_background"
+                android:button="@null"
+                android:textOff=""
+                android:textOn="" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container_vibration_option_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_sound_option_notification"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gary_notification_strong">
+
+            <com.components.TextViewPlus
+                android:id="@+id/vibration_notification_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/vibrationSettingNotification"
+                android:textColor="@color/black_numbers"
+                android:textSize="18sp"
+                foo:customFont="@string/font_name" />
+
+            <ToggleButton
+                android:id="@+id/vibration_notification_checkbox"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/switch_background"
+                android:button="@null"
+                android:textOff=""
+                android:textOn="" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_transparent_dark">
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/bannerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_id" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

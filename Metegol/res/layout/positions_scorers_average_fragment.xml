@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_position">
+
+    <RelativeLayout
+        android:id="@+id/container_submenu_position_scorers"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/light_blue_conteiner_tittle"
+        android:paddingTop="2dp">
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_positions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/MenuOptPositionsKey"
+            android:textColor="@color/blue_selected"
+            android:textColorHint="@color/blue_selected"
+            android:textSize="14sp"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_scorers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/MenuOptScorersKey"
+            android:textColor="@color/blue_not_selected"
+            android:textColorHint="@color/blue_not_selected"
+            android:textSize="14sp"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="@string/MenuOptAveragesKey"
+            android:textColor="@color/blue_not_selected"
+            android:textColorHint="@color/blue_not_selected"
+            android:textSize="14sp"
+            foo:customFont="@string/font_name" />
+
+        <ImageView
+            android:id="@+id/iv_submenu_line_position"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/selected_bar_position"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_submenu_line_score"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/selected_bar_huelguistas"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_submenu_line_average"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selected_bar_average"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/container_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_submenu_position_scorers">
+
+        <include
+            layout="@layout/position_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/average_header"
+            layout="@layout/average_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include
+            layout="@layout/scorers_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_lv_position_scorers"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/container_header">
+
+        <com.components.CustomViewPager
+            android:id="@+id/viewpager_position_scorers"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+
+        <org.taptwo.android.widget.ViewFlow
+            android:id="@+id/viewflow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:duplicateParentState="true"></org.taptwo.android.widget.ViewFlow>
+
+        <ListView
+            android:id="@+id/lv_position_scorers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:duplicateParentState="true"
+            android:visibility="gone"></ListView>
+
+        <ProgressBar
+            android:id="@+id/progress_preloader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

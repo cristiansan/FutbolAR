@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/container_scorers_header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/gray_position"
+        android:orientation="horizontal">
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_TableColumnPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:layout_marginLeft="90dp"
+            android:text="@string/TableColumnPlayer"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="26sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_TableColumnGP"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_tableColumnHG"
+            android:gravity="left"
+            android:text="@string/TableColumnG"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="26sp"
+            android:visibility="invisible"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumnHG"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/tv_tableColumnFK"
+            android:gravity="left"
+            android:text="@string/TableColumnHG"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="26sp"
+            android:visibility="invisible"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumnFK"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/tv_tableColumnMD"
+            android:gravity="left"
+            android:text="@string/TableColumnFK"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="26sp"
+            android:visibility="invisible"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumnMD"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/tv_tableColumn_tot"
+            android:gravity="left"
+            android:text="@string/TableColumnPG"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="26sp"
+            android:visibility="invisible"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumn_tot"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:text="@string/TableColumnTOT"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="26sp"
+            foo:customFont="@string/font_name_bold" />
+    </RelativeLayout>
+
+</merge>

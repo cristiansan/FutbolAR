@@ -1,0 +1,149 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/layout_top_team_selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/top">
+
+            <ImageView
+                android:id="@+id/iv_select_team_logo"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:src="@drawable/logo"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"/>
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_select_team"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:paddingTop="30dp"
+                android:textSize="40sp"
+                android:text="@string/welcome_team_selected"
+                android:textColor="@color/gray_metegol"
+                android:shadowColor="@color/gray_last_item"
+                android:shadowDy="2"
+                android:shadowDx="2"
+                android:shadowRadius="3"
+                foo:customFont="@string/font_name_bold" />
+
+            <ImageView
+                android:id="@+id/img_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shadow_icon"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_team_selected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/gray_metegol">
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_team"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="40dp"
+                android:paddingTop="30dp"
+                android:textSize="35sp"
+                android:text="@string/fan_of"
+                android:textColor="@color/black_numbers"
+                foo:customFont="@string/font_name" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/teamnamecontainer"/>
+
+                <com.components.TextViewPlus
+                    android:id="@+id/tv_fan_of"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="35sp"
+                    android:paddingBottom="20dp"
+                    android:text="TEAM"
+                    foo:customFont="@string/font_name_bold"
+                    android:textColor="@color/gray_metegol"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_team_shield"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"/>
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btn_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btncontinue_style"
+                    android:layout_gravity="center"/>
+
+                <com.components.TextViewPlus
+                    android:id="@+id/tvContinue"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Continue"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    foo:customFont="@string/font_name"
+                    android:textColor="@color/gray_metegol"/>
+
+            </RelativeLayout>
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_change_team"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="30dp"
+                android:textSize="25sp"
+                android:clickable="true"
+                android:text="@string/select_other_team"
+                android:textColor="@color/black_numbers"
+                foo:customFont="@string/font_name" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

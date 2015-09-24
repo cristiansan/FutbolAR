@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/container_tittle_fixture"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue_conteiner_tittle">
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_championship_fixture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="@string/header_championship"
+            android:textColor="@color/green_blue"
+            android:textColorHint="@color/green_blue"
+            android:textSize="20sp"
+            foo:customFont="@string/font_name" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_sliderbar_fixture"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/light_blue_conteiner_tittle">
+
+        <ImageView
+            android:id="@+id/iv_slider_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/slider_bar_large" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_date_current_fixture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/green_blue_selected"
+            android:textColorHint="@color/green_blue_selected"
+            android:textSize="15sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_date_earlier_fixture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_date_current_fixture"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_date_current_fixture"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/green_blue"
+            android:textColorHint="@color/green_blue"
+            android:textSize="15sp"
+            foo:customFont="@string/font_name" />
+
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_date_later_fixture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_date_current_fixture"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/tv_date_current_fixture"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/green_blue"
+            android:textColorHint="@color/green_blue"
+            android:textSize="15sp"
+            foo:customFont="@string/font_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_lv_fixture_date"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.components.CustomViewPager
+            android:id="@+id/viewpager_fixture"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true" />
+
+        <ProgressBar
+            android:id="@+id/progress_preloader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

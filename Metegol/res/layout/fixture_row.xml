@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:id="@+id/container_subrows"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/container_team_data"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_title_header">
+
+        <View
+            android:id="@+id/dividerTeam"
+            android:layout_width="2dp"
+            android:layout_height="42dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_middle" />
+
+        <ProgressBar
+            android:id="@+id/progressBarEmblemHome"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp" />
+
+        <ImageView
+            android:id="@+id/iv_emblem_home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:contentDescription="@string/app_name" />
+
+        <ProgressBar
+            android:id="@+id/progressBarEmblemAway"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp" />
+
+        <ImageView
+            android:id="@+id/iv_emblem_away"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/container_goals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_acronym_away"
+            android:layout_toRightOf="@+id/dividerTeam">
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_goals_away"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/green_blue"
+                android:textColorHint="@color/green_blue"
+                android:textSize="60sp"
+                foo:customFont="@string/font_name_bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container_goals_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/dividerTeam"
+            android:layout_toRightOf="@+id/tv_acronym_home">
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_goals_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/green_blue"
+                android:textColorHint="@color/green_blue"
+                android:textSize="60sp"
+                foo:customFont="@string/font_name_bold" />
+        </RelativeLayout>
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_acronym_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_emblem_home"
+            android:text=""
+            android:textColor="@color/gray_black_font"
+            android:textColorHint="@color/gray_black_font"
+            android:textSize="29sp"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_acronym_away"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/iv_emblem_away"
+            android:text=""
+            android:textColor="@color/gray_black_font"
+            android:textColorHint="@color/gray_black_font"
+            android:textSize="29sp"
+            foo:customFont="@string/font_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_game_data"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/gray_metegol">
+
+        <ImageView
+            android:id="@+id/iv_Time"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@+id/tv_date"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_clock" />
+
+        <ImageView
+            android:id="@+id/iv_Date"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_calendar" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_Date"
+            android:text=""
+            android:textColor="@color/gray_black_font"
+            android:textColorHint="@color/gray_black_font"
+            android:textSize="15sp"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_time_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/iv_Time"
+            android:text=""
+            android:textColor="@color/gray_black_font"
+            android:textColorHint="@color/gray_black_font"
+            android:textSize="15sp"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_state_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_time_start"
+            android:text=""
+            android:textColor="@color/gray_black_font"
+            android:textColorHint="@color/gray_black_font"
+            android:textSize="13sp"
+            android:visibility="invisible"
+            foo:customFont="@string/font_name" />
+
+        <RelativeLayout
+            android:id="@+id/container_state_match"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/blue_sky_finalized"
+            android:visibility="gone">
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/gray_black_font"
+                android:textColorHint="@color/gray_black_font"
+                android:textSize="15sp"
+                foo:customFont="@string/font_name" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- <View
+        android:id="@+id/view_line_fixture"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white" /> -->
+
+</LinearLayout>

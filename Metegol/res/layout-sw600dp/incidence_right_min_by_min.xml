@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/container_min_to_min_header_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:background="@color/gray_metegol"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right"
+        android:baselineAligned="false"
+        android:gravity="right">
+
+        <LinearLayout
+            android:id="@+id/container_incidence_min_by_min_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_icon_type_incidence_right"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name" />
+
+            <com.components.TextViewPlus
+                android:id="@+id/tv_min_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="bottom"
+                android:text="@string/min"
+                android:textColor="@color/gray_black_font"
+                android:textSize="22sp"
+                app:customFont="@string/font_name_bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

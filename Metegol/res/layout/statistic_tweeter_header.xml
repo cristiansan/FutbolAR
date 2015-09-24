@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/gray_light_tweeter"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_statistic_tweeter_title"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:background="@color/green_blue"
+        android:gravity="center"
+        android:text="@string/Most_mentioned_players"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        foo:customFont="@string/font_name_bold" />
+
+</LinearLayout>

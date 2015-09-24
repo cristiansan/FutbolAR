@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_light">
+
+    <RelativeLayout
+        android:id="@+id/container_top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/twitter_comment_msg"
+        android:padding="5dp"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/container_user_picture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp">
+
+            <ProgressBar
+                android:id="@+id/progressBarComment"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_user_picture"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/twitter_photo_time_line" />
+
+        </RelativeLayout>
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/container_user_picture"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="26sp"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_comment_body"
+            android:layout_width="720dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/container_user_picture"
+            android:layout_below="@+id/container_user_picture"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="26sp"
+            foo:customFont="@string/font_name" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

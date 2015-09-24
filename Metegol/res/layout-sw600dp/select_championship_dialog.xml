@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:id="@+id/container_select_championship"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/gray_metegol">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="40dp"
+        android:background="@drawable/background_change_selecet_tournament">
+
+        <ImageView
+            android:id="@+id/im_logo"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_welcome_select_championship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/Welcome"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/blue_tittle"
+            android:textSize="60sp"
+            foo:customFont="@string/font_name" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_select_championship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_welcome_select_championship"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/TournamentSelectionMessageKey"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray_middle_2"
+            android:textSize="35sp"
+            foo:customFont="@string/font_name" />
+
+        <ScrollView
+            android:id="@+id/sv_container_selec_championship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_select_championship"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:id="@+id/container_button_select_championship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

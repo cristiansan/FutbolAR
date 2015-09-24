@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_top_select_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/top">
+
+        <ImageView
+            android:id="@+id/iv_select_team_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"/>
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_select_team"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="20sp"
+            android:text="@string/select_your_team"
+            android:textColor="@color/gray_metegol"
+            android:shadowColor="@color/gray_last_item"
+            android:shadowDy="2"
+            android:shadowDx="2"
+            android:shadowRadius="3"
+            foo:customFont="@string/font_name_bold" />
+
+        <ImageView
+            android:id="@+id/img_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shadow_icon"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_select_team"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_metegol">
+
+        <GridView
+            android:id="@+id/gv_select_team"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:numColumns="4"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:stretchMode="columnWidth"
+            android:horizontalSpacing="1dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingTop="1dip"
+            android:background="@color/gray_metegol">
+
+        </GridView>
+
+    </LinearLayout>
+
+</LinearLayout>

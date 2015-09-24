@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_metegol"
+    android:orientation="vertical"
+    tools:context=".NewsWebActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/container_banner">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/container_status_team_fragment">
+
+                <com.astuetz.PagerSlidingTabStrip
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    foo:customFont="@string/font_name"
+                    foo:pstsShouldExpand="true"
+                    android:layout_gravity="top"
+                    foo:pstsIndicatorColor="@color/color_title_menu"
+                    foo:pstsUnderlineColor="@color/gray_item"
+                    foo:pstsDividerColor="@color/gray_metegol"
+                    android:textColor="@color/black_twitter_titulars"
+                    foo:pstsTextColorSelected="@color/gray_item_menu"
+                    foo:pstsTextStyle="normal"
+                    foo:pstsTextSelectedStyle="bold"
+                    foo:pstsIndicatorHeight="8dp"
+                    foo:pstsUnderlineHeight="5dp"
+                    android:textSize="20dp">
+                </com.astuetz.PagerSlidingTabStrip>
+
+                <android.support.v4.view.ViewPager
+                    android:layout_below="@+id/container_statistics_status_game_fragment"
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v4.view.ViewPager>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/progressbarlay"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+</LinearLayout>

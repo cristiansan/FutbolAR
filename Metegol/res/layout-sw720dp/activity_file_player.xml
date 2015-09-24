@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FilePlayerActivity">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/container_name_title_file_player_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_metegol">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_light"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_blue_conteiner_tittle">
+
+                <com.components.TextViewPlus
+                    android:id="@+id/tv_biography"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/Biography"
+                    android:textColor="@color/blue_selected"
+                    android:textColorHint="@color/blue_selected"
+                    android:textSize="30sp"
+                    foo:customFont="@string/font_name" />
+
+                <com.components.TextViewPlus
+                    android:id="@+id/tv_twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginTop="2dp"
+                    android:text="TWITTER"
+                    android:textColor="@color/blue_not_selected"
+                    android:textColorHint="@color/blue_not_selected"
+                    android:textSize="30sp"
+                    foo:customFont="@string/font_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_blue_conteiner_tittle">
+
+                <ImageView
+                    android:id="@+id/bar_biography_selected"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/selected_bar_position" />
+
+                <ImageView
+                    android:id="@+id/bar_twitter_selected"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/selected_bar_average"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_subtitle_twitter_playyer"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/green_blue_bar_twitter"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_cant_mentions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/Mentions_count"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/container_viewflow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/container_banner">
+
+            <org.taptwo.android.widget.ViewFlow
+                android:id="@+id/viewflow"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/gray_light"
+                android:duplicateParentState="true"></org.taptwo.android.widget.ViewFlow>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container_preloader"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/container_banner"
+            android:background="@drawable/background_title"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progress_preloader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_transparent_dark">
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/bannerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_id" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

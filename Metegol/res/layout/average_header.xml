@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/container_average_header"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/container_submenu_position_scorers"
+        android:background="@color/gray_position">
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumnTEAM"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/TableColumnTEAM"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumn_1"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_tableColumn_2"
+            android:gravity="left"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumn_2"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/tv_tableColumn_3"
+            android:gravity="left"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumn_3"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/tv_tableColumnML"
+            android:gravity="center"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumnML"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toLeftOf="@+id/tv_tableColumnMP"
+            android:gravity="right"
+            android:text="@string/TableColumnPTS"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumnMP"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/tv_tableColumnPRO"
+            android:gravity="left"
+            android:text="@string/TableColumnMP"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name_bold" />
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_tableColumnPRO"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="@string/TableColumnPRO"
+            android:textColor="@color/blue_green"
+            android:textColorHint="@color/blue_green"
+            android:textSize="12sp"
+            foo:customFont="@string/font_name_bold" />
+    </RelativeLayout>
+
+</merge>

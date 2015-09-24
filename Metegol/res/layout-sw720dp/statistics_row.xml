@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_metegol"
+    android:paddingTop="25dp">
+
+    <View
+        android:id="@+id/strut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_value_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/strut"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/strut"
+        android:layout_toRightOf="@+id/tv_img_home"
+        android:gravity="left"
+        android:textColor="@color/gray_black_font"
+        android:textSize="30sp"
+        foo:customFont="@string/font_name_bold" />
+
+    <ImageView
+        android:id="@+id/tv_img_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_value_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="4dp"
+        android:layout_above="@+id/seekbar_statistics_der"
+        android:text="@string/MenuOptStatisticsKey"
+        android:textColor="@color/gray_black_font"
+        android:textSize="25sp"
+        foo:customFont="@string/font_name_bold" />
+
+    <SeekBar
+        android:id="@+id/seekbar_statistics_der"
+        android:layout_below="@id/tv_value_home"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:maxHeight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:thumbOffset="0px"
+        android:layout_alignBottom="@+id/seekbar_statistics_izq"
+        android:layout_toEndOf="@+id/strut"
+        android:layout_toRightOf="@+id/strut"
+        android:progressDrawable="@drawable/progress_seekbar"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_statistics_izq"
+        android:layout_below="@id/tv_value_home"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:maxHeight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:thumbOffset="0px"
+        android:layout_toStartOf="@+id/seekbar_statistics_der"
+        android:layout_toLeftOf="@+id/seekbar_statistics_der"
+        android:progressDrawable="@drawable/progress_seekbar"/>
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_value_away"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/strut"
+        android:layout_alignTop="@+id/strut"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/tv_img_away"
+        android:gravity="right"
+        android:text=""
+        android:textColor="@color/gray_black_font"
+        android:textSize="30sp"
+        foo:customFont="@string/font_name_bold" />
+
+    <ImageView
+        android:id="@+id/tv_img_away"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

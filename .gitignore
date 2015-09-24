@@ -1,0 +1,8 @@
+Metegol/build/
+librarySliding/build/
+viewflow_library/build/
+libraryPullToRefresh/build/
+FacebookSDK/facebook/build/
+*.DS_Store
+...iml
+*.apk

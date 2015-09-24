@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue_green"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/arrow_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/arrow_menu" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/arrow_icon"
+        android:text=""
+        android:textColor="@color/color_title_menu"
+        android:textColorHint="@color/color_title_menu"
+        android:textSize="16sp"
+        foo:customFont="@string/font_name_italic" />
+
+</RelativeLayout>

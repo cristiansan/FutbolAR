@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="40dp"
+    android:background="@color/gray_item"
+    android:id="@+id/layout_new_row">
+
+    <ProgressBar
+        android:id="@+id/progressBarNews"
+        style="?android:attr/progressBarStyle"
+        android:paddingTop="90dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"/>
+
+    <ImageView
+        android:id="@+id/iv_news"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name"/>
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_title_news"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/iv_news"
+        android:layout_marginTop="2dp"
+        android:lineSpacingExtra="@dimen/spaceLine"
+        android:maxLines="3"
+        android:paddingBottom="3dp"
+        android:text=""
+        android:textColor="@color/green_blue"
+        android:textColorHint="@color/green_blue"
+        android:textSize="20sp"
+        foo:customFont="@string/font_name_bold" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_desc_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_title_news"
+        android:layout_marginTop="3dp"
+        android:paddingBottom="3dp"
+        android:maxLines="4"
+        android:text=""
+        android:textColor="@color/black_numbers"
+        android:textSize="13sp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        foo:customFont="@string/font_name" />
+
+</RelativeLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/gray_metegol">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/container_status_team_fragment">
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            foo:customFont="@string/font_name_bold"
+            foo:pstsTabPaddingLeftRight="2dp"
+            foo:pstsShouldExpand="true"
+            foo:pstsIndicatorColor="@color/color_title_menu"
+            foo:pstsDividerColor="@color/gray_metegol"
+            foo:pstsUnderlineColor="@color/gray_item"
+            foo:pstsIndicatorHeight="8dp"
+            foo:pstsUnderlineHeight="5dp"
+            android:textColor="@color/black_twitter_titulars"
+            foo:pstsTextColorSelected="@color/gray_item_menu"
+            foo:pstsTextStyle="normal"
+            foo:pstsTextSelectedStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textSize="20dp">
+        </com.astuetz.PagerSlidingTabStrip>
+
+        <android.support.v4.view.ViewPager
+            android:layout_below="@+id/container_statistics_status_game_fragment"
+            android:id="@+id/vp_game"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <ImageButton
+    android:id="@+id/suplentesBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@android:string/untitled"
+    android:focusableInTouchMode="false"
+    android:padding="0dp"
+    android:src="@drawable/suplentes" />
+
+<RelativeLayout
+    android:id="@+id/container_team_title_fragment"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:layout_alignParentTop="true"
+    android:background="@color/color_title_menu">
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_team_title_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/blue_tittle"
+        android:textColorHint="@color/blue_tittle"
+        foo:customFont="@string/font_name" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_date_title_fragment"
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_tag_date"
+        android:paddingLeft="30sp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/blue_tittle"
+        android:textSize="15sp"
+        foo:customFont="@string/font_name" />
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/container_status_team_fragment"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_below="@+id/container_team_title_fragment"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="10dp"
+    android:background="@color/gray_metegol">
+
+    <ProgressBar
+        android:id="@+id/progressBarEmblemAway"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25dp" />
+
+    <ImageView
+        android:id="@+id/iv_emblem_team_away"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/app_name" />
+
+    <ProgressBar
+        android:id="@+id/progressBarEmblemHome"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp" />
+
+    <ImageView
+        android:id="@+id/iv_emblem_team_home"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:contentDescription="@string/app_name" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_goal_team_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv_emblem_team_home"
+        android:text=""
+        android:textColor="@color/green_blue"
+        android:textColorHint="@color/green_blue"
+        android:textSize="60sp"
+        foo:customFont="@string/font_name_bold" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_goal_team_away"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/iv_emblem_team_away"
+        android:text=""
+        android:textColor="@color/green_blue"
+        android:textColorHint="@color/green_blue"
+        android:textSize="60sp"
+        foo:customFont="@string/font_name_bold" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_stadium"
+        class="com.components.TextViewPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:minWidth="200dp"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/green_blue"
+        android:textColorHint="@color/green_blue"
+        android:textSize="17sp"
+        foo:customFont="@string/font_name"/>
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seek_change_team"
+        android:layout_alignRight="@+id/seek_change_team"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/green_blue"
+        android:textColorHint="@color/green_blue"
+        android:textSize="25sp"
+        foo:customFont="@string/font_name_bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:weightSum="2">
+
+        <View
+            android:id="@+id/team_view_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <View
+            android:id="@+id/team_view_right"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seek_change_team"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:max="100"
+        android:paddingTop="30dp"
+        android:maxHeight="50dp"
+        android:maxWidth="300dp"
+        android:minHeight="20dp"
+        android:minWidth="150dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/slider"
+        android:thumb="@drawable/team_ball_switch"
+        android:thumbOffset="-2px" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seek_change_team"
+        android:layout_alignRight="@+id/seek_change_team"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingTop="30dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="15sp"
+        foo:customFont="@string/font_name_bold" />
+</RelativeLayout>
+
+</RelativeLayout>

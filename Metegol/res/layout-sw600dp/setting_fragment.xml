@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.pmovil.soccer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_notification_light">
+
+    <RelativeLayout
+        android:id="@+id/container_title_setting_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/light_blue_conteiner_tittle">
+
+        <com.components.TextViewPlus
+            android:id="@+id/tv_title_setting_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/MenuOptNotificationKey"
+            android:textColor="@color/blue_selected"
+            android:textColorHint="@color/blue_selected"
+            android:textSize="25sp"
+            foo:customFont="@string/font_name" />
+    </RelativeLayout>
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_selection_notification_setting_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_title_setting_fragment"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/gray_notification_light"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="@string/NotificationMenuOptFavoriteKey"
+        android:textColor="@color/black_numbers"
+        android:textColorHint="@color/black_numbers"
+        android:textSize="25sp"
+        foo:customFont="@string/font_name" />
+
+    <com.components.TextViewPlus
+        android:id="@+id/tv_setting_notification_setting_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_selection_notification_setting_fragment"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/gary_notification_strong"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="@string/NotificationMenuOptSettingKey"
+        android:textColor="@color/black_numbers"
+        android:textColorHint="@color/black_numbers"
+        android:textSize="25sp"
+        foo:customFont="@string/font_name" />
+
+</RelativeLayout>
